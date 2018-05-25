@@ -3,7 +3,7 @@
   <div class="wrapper">
 
 
-      <div class="cocktail-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo, height: 300, width: 400, crop: :fill %>');" data-aos="flip-left">
+      <div class="cocktail-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo, crop: :fill_pad %>');" data-aos="flip-left">
       </div>
 
       <div class="cocktail-description">
@@ -15,7 +15,6 @@
             <%= dose.description %>
             <%= dose.ingredient.name %>
             <%= link_to 'Delete', dose_path(dose), method: :delete %>
-          <br>
         <% end %>
         <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary btn-add" %>
         </h2>
