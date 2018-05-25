@@ -131,7 +131,7 @@ body {
   position: relative;
   margin: 20px 20px;
   border-style: solid;
-  border-width: 50px;
+  border-width: 20px;
   border-color: white;
   border-radius: 3px;
   padding: 0px;
@@ -172,6 +172,7 @@ body {
   z-index: 2;
   background: black;
   opacity: 0;
+  text-decoration: none;
 }
 .card-link:hover {
   opacity: 0.1;
