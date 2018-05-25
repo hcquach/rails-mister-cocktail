@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Croissant+One);
+
+.home-container {
+  padding: 0px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-title {
+}
+
+h1 {
+  top: 20%;
+  left: 0;
+  width: 100%;
+  font-family: 'Croissant One', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  color: #2d2d2d;
+  display: inline-block;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  padding: .5em .6em;
+}
+
+body {
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #F5EACD, #edfead, #d9f489, #FAF5EC);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+// /* Polaroid */
+// .polaroid-grid {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .polaroid {
+//   height: 600px;
+//   width: 450px;
+//   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+//   background-color: white;
+//   position: relative;
+//   margin: 20px 20px;
+//   padding: 0px;
+// }
+
+// .photo-polaroid {
+//   position: absolute;
+//   top: 10px;
+//   left: 10%;
+//   align-items: center;
+// }
+
+// .polaroid-link {
+//   position: absolute;
+//   font-family: 'Croissant One', sans-serif;
+//   color: #2d2d2d;
+//   text-align: center;
+//   bottom: 30px;
+//   left: 50%;
+//   font-size: 24px;
+//   text-decoration: none;
+// }
+
+/* Cards */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 350px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 20px 20px;
+  border-style: solid;
+  border-width: 50px;
+  border-color: white;
+  border-radius: 3px;
+  padding: 0px;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}

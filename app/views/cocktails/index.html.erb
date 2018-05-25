@@ -1,0 +1,46 @@
+<div class="home-container">
+
+  <div class="title-container">
+    <div class="home-title">
+     <h1>Welcome to the Durian Bar  <%= image_tag("durian.png", class: "shake-opacity", height: "80px") %>
+      <br><%= image_tag("shaker.png", class: "shake-horizontal", height: "80px") %>
+      We love fruits and cocktails
+    </h1>
+    </div>
+  </div>
+
+<!--   <div class="polaroid-grid">
+    <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="polaroid">
+          <%= image_tag("https://kitt.lewagon.com/placeholder/cities/shanghai", height: "300px", width: "300px", class:"photo-polaroid") %>
+          <div class="tag-polaroid">
+            <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: "polaroid-link" %></h2>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div> -->
+
+  <div class="card-grid">
+    <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');" data-aos="flip-left">
+        <div class="card-category">
+          Popular
+        </div>
+        <div class="card-description">
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+          <p>Very cool drink, the best</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+<div class="form-container">
+  <div class="form">
+    <%= simple_form_for (@cocktail) do |f| %>
+      <%= f.input :name, label: 'Cocktail name', placeholder: 'Old fashioned', error: 'Name is mandatory, please specify one' %>
+      <%= f.button :submit, class: "btn btn-primary text-center" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="form-container">
+  <div class="form">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description, label: 'Description please', error: 'It is mandatory, please specify one' %>
+      <%= f.association :ingredient %>
+      <%= f.button :submit, class: "btn btn-primary text-center" %>
+    <% end %>
+  </div>
+</div>
