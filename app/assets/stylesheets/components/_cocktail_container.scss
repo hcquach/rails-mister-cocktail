@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Croissant+One);
+
+.cocktail-container {
+  padding: 50px;
+}
+
+.wrapper {
+}
+
+.cocktail-container h1 {
+  top: 20%;
+  left: 0;
+  width: 100%;
+  font-family: 'Croissant One', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  color: #2d2d2d;
+  display: inline-block;
+  border-top: 1px solid #2d2d2d;
+  border-bottom: 1px solid #2d2d2d;
+  padding: .5em .6em;
+}
+
+.cocktail-container h2 {
+  width: 100%;
+  font-family: 'Croissant One', sans-serif;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  color: #2d2d2d;
+  display: inline-block;
+  padding: .5em .6em;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.cocktail-photo {
+  background-size: cover;
+  height: 80vh;
+  width: 400px;
+}
+
+.cocktail-description {
+  position: relative;
+  background: linear-gradient(-10deg, #F5EACD, #edfead, #d9f489, #ffffff);
+  height: 80vh;
+  width: 400px;
+}
+
+.btn-add {
+  position: absolute;
+  font-family: 'Croissant One', sans-serif;
+  color: #2d2d2d;
+  text-align: center;
+  bottom: 30px;
+  left: 50%;
+  font-size: 24px;
+  text-decoration: none;
+}

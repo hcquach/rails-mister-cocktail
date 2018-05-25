@@ -29,6 +29,8 @@ ingredients['drinks'].each do |hash_ingredient|
   Ingredient.create!(name: ingredient.capitalize)
 end
 
-["SAZERAC", "MOJITO", "MOSCOW MULE", "MARGARITA", "DRY MARTINI", "WHISKEY SOUR", "MANHATTAN", "DAIQUIRI", "NEGRONI", "OLD FASHIONED"].each do |cocktail|
-  Cocktail.create!(name: cocktail.capitalize)
-end
+url_photo = 'http://thenutfreevegan.net/wp-content/uploads/2017/11/Delicious-Maple-Old-Fashioned-Cocktail-Vegan-Nutfreevegan-Bourbon-recipe-3.jpg'
+
+# ["SAZERAC", "MOJITO", "MOSCOW MULE", "MARGARITA", "DRY MARTINI", "WHISKEY SOUR", "MANHATTAN", "DAIQUIRI", "NEGRONI", "OLD FASHIONED"].each do |cocktail|
+#   Cocktail.create!(name: cocktail.capitalize)
+# end

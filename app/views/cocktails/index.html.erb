@@ -4,7 +4,7 @@
     <div class="home-title">
      <h1>Welcome to the Durian Bar  <%= image_tag("durian.png", class: "shake-opacity", height: "80px") %>
       <br><%= image_tag("shaker.png", class: "shake-horizontal", height: "80px") %>
-      We love fruits and cocktails
+      <span id="banner-typed-text">We love fruits and cocktails</span>
     </h1>
     </div>
   </div>
@@ -28,16 +28,14 @@
     <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');" data-aos="flip-left">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>');" data-aos="flip-left">
         <div class="card-category">
           Popular
         </div>
         <div class="card-description">
           <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-          <p>Very cool drink, the best</p>
         </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
+        <% link_to cocktail.name, cocktail_path(cocktail), class:"card-link" %>
       </div>
     </div>
     <% end %>
