@@ -24,12 +24,19 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredient_serialized = open(url).read
 ingredients = JSON.parse(ingredient_serialized)
 
+ingredients_all = []
+
 ingredients['drinks'].each do |hash_ingredient|
-  ingredient = hash_ingredient['strIngredient1']
-  Ingredient.create!(name: ingredient.capitalize)
+  ingredients_all << hash_ingredient['strIngredient1']
 end
 
-url_photo = 'http://thenutfreevegan.net/wp-content/uploads/2017/11/Delicious-Maple-Old-Fashioned-Cocktail-Vegan-Nutfreevegan-Bourbon-recipe-3.jpg'
+ingredients_all = ingredients_all.sort
+
+ingredients_all.each do |ingred|
+  Ingredient.create!(name: ingred.capitalize)
+end
+
+# url_photo = 'http://thenutfreevegan.net/wp-content/uploads/2017/11/Delicious-Maple-Old-Fashioned-Cocktail-Vegan-Nutfreevegan-Bourbon-recipe-3.jpg'
 
 # ["SAZERAC", "MOJITO", "MOSCOW MULE", "MARGARITA", "DRY MARTINI", "WHISKEY SOUR", "MANHATTAN", "DAIQUIRI", "NEGRONI", "OLD FASHIONED"].each do |cocktail|
 #   Cocktail.create!(name: cocktail.capitalize)
